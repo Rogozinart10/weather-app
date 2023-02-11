@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: var(--background-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+html[data-theme='light'] {
+  --text-color: #000000;
+  --background-color: #FFFFFF;
+  --background-color-cards: #FFFFFF;
+  --background-color-card: #4793ff33;
+}
+html[data-theme='dark'] {
+  --text-color: #FFFFFF;
+  --background-color: #000000;
+  --background-color-cards: #4F4F4F;
+  --background-color-card: #2E3035;
+}
+
+@media screen and (max-width: 1200px) {
+  .app {
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    margin: 20px auto;
+  }
+}
